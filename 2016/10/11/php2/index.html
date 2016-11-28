@@ -1,0 +1,831 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="php," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="运算符算数运算符+　-　*　/　%　　//加 减 乘 除 取余">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php 简单介绍(二)">
+<meta property="og:url" content="http://yoursite.com/2016/10/11/php2/index.html">
+<meta property="og:site_name" content="rose-j的博客">
+<meta property="og:description" content="运算符算数运算符+　-　*　/　%　　//加 减 乘 除 取余">
+<meta property="og:updated_time" content="2016-11-28T15:20:53.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="php 简单介绍(二)">
+<meta name="twitter:description" content="运算符算数运算符+　-　*　/　%　　//加 减 乘 除 取余">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/10/11/php2/"/>
+
+
+
+
+
+  <title> php 简单介绍(二) | rose-j的博客 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">rose-j的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/11/php2/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="rose-j">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/flower.jpg">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="rose-j的博客">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="rose-j的博客" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                php 简单介绍(二)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-11T09:11:56+08:00">
+                2016-10-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h4 id="算数运算符"><a href="#算数运算符" class="headerlink" title="算数运算符"></a>算数运算符</h4><pre><code>+　-　*　/　%　　//加 减 乘 除 取余
+</code></pre><a id="more"></a>
+<h4 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h4><p>=　　　　　赋值  </p>
+<p>+=　　　　加法赋值　　　　$a = $a + 5;</p>
+<p>-=　　　　减法赋值　　　　$a = $a - 5;</p>
+<p><em>=　　　　乘法赋值　　　　$a = $a </em> 5;</p>
+<p>/=　　　　除法赋值　　　　$a = $a / 5;</p>
+<p>.=　　　　拼接赋值　　　　$a = $a.5;</p>
+<h4 id="递增递减"><a href="#递增递减" class="headerlink" title="递增递减"></a>递增递减</h4><p>++　递增　　$i++;先返回$i的值，再将$i的值加1　　++$i;先给$i加1，再返回$i的值;</p>
+<p>–　递减　　$i–;　–$i;</p>
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><p>利用逻辑运算符可以根据多个变量的值进行判断，这使得控制程序的流程成为可能，逻辑操作符常用于控制结构中，如if和while 及for 循环。</p>
+<p>&amp;&amp;　　逻辑与;　　||　　逻辑或;    　　!　　逻辑非;　　xor　　异或;  </p>
+<h4 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h4><p>比较运算符，返回一个布尔值true或false</p>
+<p>‘ &gt;　大于,    &lt;　小于,        &gt;=　大于等于<br>　　<br>&lt;=　小于　　</p>
+<p>!=　不等于　　</p>
+<p>&lt;&gt;　不等于　　</p>
+<p>==　等于　　</p>
+<p>===　全等于（内容，类型均同）</p>
+<p>！==　全不等</p>
+<h4 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h4><p>语法：expression1 ? expression2 : expression3</p>
+<h4 id="运算符的优先级"><a href="#运算符的优先级" class="headerlink" title="运算符的优先级"></a>运算符的优先级</h4><p>所谓运算符的优先级指的是哪一个运算符应该先计算。</p>
+<h3 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h3><h4 id="判断语句"><a href="#判断语句" class="headerlink" title="判断语句"></a>判断语句</h4><p>if 语句</p>
+<p>if(判断条件){代码块}else{代码块}；</p>
+<p>switch 语句    switch(){ case 1: 代码块  break；case 2: 代码块  break；…..;defaule}</p>
+<h4 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h4><p>while </p>
+<p>语法格式：while(判断条件){循环体}</p>
+<p>do…while</p>
+<p>语法格式：do{循环体}while(判断条件)</p>
+<p>for </p>
+<p>语法格式：for(expression1;expression2;express3){循环体}</p>
+<p>foreach</p>
+<p>语法格式1：foreach(array_expr as $value){循环体}</p>
+<p>语法格式2：foreach(array_expr as $key=&gt;$value){循环体}</p>
+<h4 id="跳出循环"><a href="#跳出循环" class="headerlink" title="跳出循环"></a>跳出循环</h4><p>break 如果包含一个break语句，将立即结束 while、do…while、for、foreach、switch的执行。</p>
+<p>continue 使当前循环结束，并从下一次循环开始执行；</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="函数概念"><a href="#函数概念" class="headerlink" title="函数概念"></a>函数概念</h4><p>函数是用来完成某种特定任务的可重用代码块</p>
+<p>函数可以使程序更具模块化，拥有良好的结构；</p>
+<p>函数定义后在程序中可以重复调用；</p>
+<p>函数分为内置函数和自定义函数；</p>
+<h4 id="函数分布"><a href="#函数分布" class="headerlink" title="函数分布"></a>函数分布</h4><p>1.内置函数</p>
+<p>php系统提供了大量功能强大的函数，帮助我们解决各种问题；</p>
+<p>2.创建自定义函数</p>
+<p>functioon 函数名(参数){函数内容}；</p>
+<h4 id="函数简介"><a href="#函数简介" class="headerlink" title="函数简介"></a>函数简介</h4><p>函数是用function 关键字来声明；</p>
+<p>函数名称是由字母下划线开始，中间可以包含数字；</p>
+<p>函数名不区分大小写，不过在调用函数的时候，通常使用其在定义时相同的形式；</p>
+<p>php不支持函数重载，所以自定义函数不能和内置函数重名</p>
+<p>参数出现在括号中，如果有多个参数用逗号分隔；</p>
+<p>参数调用：语法格式:函数名(参数)；</p>
+<p>参数传递</p>
+<p>值传递（传值）：函数内对参数值的改变不会影响函数外部的值；</p>
+<p>引用传递（传址）：有些情况下，可能希望在函数体内对参数的修改在函数体外也能反映：使用引用传递参数要在参数前加上&amp;符号；变量本身传入，传入后的变量与原变量建立联系；函数体内变量的变化，会影响到原变量本身；</p>
+<p>默认的参数值：可以为参数指定默认值，在没有提供其他值得情况下，则将默认值自动赋给该参数；</p>
+<p>可选参数：可以指定某个参数为可选参数，这些参数需要放在参数列表的末尾，需要指定其默认值为空；如果指定了多个可选参数，可以选择性德传递某些参数；</p>
+<h4 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h4><p>通常情况下，只依靠函数做某些事情还不够，需要将函数的执行结果返回给调用者，这时可以使用return语句返回结果；</p>
+<p>return语句变执行后，将使得函数立即结束运行，并且将控制权被调用的行；</p>
+<h4 id="变量作用域和生命周期"><a href="#变量作用域和生命周期" class="headerlink" title="变量作用域和生命周期"></a>变量作用域和生命周期</h4><p>由于引入了函数，程序中变量的能见度发生了变化，即变量的作用范围发生了改变；</p>
+<p>变量分为：全局变量，静态变量</p>
+<p>局部变量，函数体内定义的变量为局部变量，只在函数体可见；</p>
+<p>局部变量的作用域：从声明它的那条语句开始到函数结束；</p>
+<h4 id="include-和-require"><a href="#include-和-require" class="headerlink" title="include 和 require"></a>include 和 require</h4><p>1.include()</p>
+<p>include() 语句将在其被调用的位置处包含一个文件   例子：</p>
+<pre><code>include(“init.php&quot;);
+</code></pre><p>2.include_once()</p>
+<p>include_once() 的作用与 include()，不过它会先验证是否已经包含了该文件，如果已经包含，则不再执行include_once();</p>
+<p>3.require（）与include()一样，只不过require（）我们通常放在php程序的最前面；</p>
+<p>4.require_once与include_once()一样，但是也要放在php程序的最前面；</p>
+<p>5.include和require的区别：require一个文件存在错误的话，那么程序就会中断执行了，并显示致命错误；include一个文件存在错误的话，那么程序不会中断，而是继续执行，并显示一个警告错误。</p>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><h4 id="数组的概念"><a href="#数组的概念" class="headerlink" title="数组的概念"></a>数组的概念</h4><p>数组可以理解为有序的（键-值）对组成的数据值得集合；</p>
+<p>如果我们把变量理解为单个值的容器，那么数组就是可以包含多个值得容器；</p>
+<p>根据索引值得不同数组分为：索引数组和关联数组；</p>
+<p>例子：索引数组  $day = array(“a”,”a”,”a”);<br>     关联数组  $week = array(“a”=&gt;”星期一”，”b”=&gt;”星期二”，”c”=&gt;”星期三”)；</p>
+<h4 id="数组的创建"><a href="#数组的创建" class="headerlink" title="数组的创建"></a>数组的创建</h4><p>1.使用array()函数 $array = array([mixed…])</p>
+<p>例子：$arr = array();</p>
+<p>　　　＄fruits = array(“orange”,”apple”,”banana”);<br>　　<br>　　　＄languages = array(“en” =&gt; “english”,”cn”=&gt;”china”);<br>　　　<br>与其他语言的数组实现方式不同，php不需要在创建数组时指定其大小。因为php是一种松散类型的语言，所以甚至不需要在使用前先声明。</p>
+<p>索引可以是整形数字或者是字符串；</p>
+<p>索引数组：索引为整数，如果没有指定索引值则默认为零，依次递增；</p>
+<p>关联数组：索引为字符串的数组；</p>
+<p>2.直接对数组变量赋值 $arr[key] = value;</p>
+<p>如果方括号中没有指定索引，则取当前最大整数索引值，新的键名将是 该值+1.如果当前还没有整数索引，则键名将为0.如果指定的键名已经有值了，该值将被覆盖。</p>
+<p>3.使用函数创建数组：range()建立一个包含指定范围单元的数组</p>
+<p>例子：$num = range(1,100);</p>
+<p>print_r($num);$letter = range(‘a’,’l’);print_r($letter);</p>
+<h4 id="数组的基本操作"><a href="#数组的基本操作" class="headerlink" title="数组的基本操作"></a>数组的基本操作</h4><p>1.unset（$arr[o]）删除数组元素</p>
+<p>2.print_r($arr) 打印数组</p>
+<p>3.counut($arr) 取得数组大小</p>
+<p>4.in_array(10,$arr) 检查数组中是否包含某个值</p>
+<h4 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h4><p>1.for 循环遍历数组</p>
+<p>2.foreach 循环遍历数组</p>
+<h4 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h4><p>1.sort()、rsort()对数组进行升序和降序</p>
+<p>2.ksort() 、krsort() 对数组按索引进行升序或降序，并保持索引关系</p>
+<h4 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h4><p>数组元素的值也可以是数组；</p>
+<pre><code>$result = array(
+    array(
+        &apos;pname&apos; =&gt; &apos;nokia n73&apos;,
+        &apos;price&apos; =&gt; 1500,
+    ),
+    array(
+        &apos;pname&apos; =&gt; &apos;nokia 5800&apos;,
+        &apos;price&apos; =&gt; 2000,
+    ),
+);
+</code></pre><p>遍历二维数组:</p>
+<pre><code>foreach($products as $product_k =&gt; $product_v){
+    foreach($product_v as $key =&gt; $val){
+        echo $key.&apos;=&gt;&apos;.$val;
+    }
+}
+</code></pre><h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><h4 id="输出字符串"><a href="#输出字符串" class="headerlink" title="输出字符串"></a>输出字符串</h4><p>1.echo</p>
+<p>void echo(string arg1[,string…])是一个语法，不是函数；</p>
+<p>echo 没有返回值</p>
+<p>echo 可以输出多个值，使用逗号分隔；</p>
+<h4 id="其他处理函数"><a href="#其他处理函数" class="headerlink" title="其他处理函数"></a>其他处理函数</h4><p>1.strlen()获取字符串长度</p>
+<p>2.strtolower()将字符串转换为小写字母</p>
+<p>3.strtoupper()将字符串转换为大写字母</p>
+<h4 id="查找与替换"><a href="#查找与替换" class="headerlink" title="查找与替换"></a>查找与替换</h4><p>1.strpos()</p>
+<p>int strpos(string,find[,start])</p>
+<p>strpos()函数在string中以区分大小写的方式找到find第一次出现的位置；如果没有找到则返回FALSE；</p>
+<p>可选参数start指定开始查找的位置；</p>
+<p>2.stripos()</p>
+<p>stripos()与strpos()功能相同，只是查找时不区别大小写；</p>
+<p>3.str_replace()</p>
+<p>string str_replace(search,replace,subject[,int &amp;count])</p>
+<p>string_replace()函数在subject中以区分大小写的方式搜索search，用replace替换找到的所有内容；如果没有找到search，则subject保持不变；</p>
+<p>如果定义了可选参数 count 则只替换subject中count个search</p>
+<p>4.str_ireplace()</p>
+<p>str_ireplace()与str_replace()功能相同，只是不区分大小写；</p>
+<p>####截取字符串</p>
+<p>1.substr()</p>
+<p>string substr(string string, int start[,int length])</p>
+<p>从start位置取出length长度的字符，字符串位置开始值为零，如果没有指定length，那么默认一直到字符串末尾。</p>
+<p>2.strstr()</p>
+<p>string strstr(string str,string search,bool beforeSearch)</p>
+<p>strstr()作用从str中搜索search，并根据第三个参数返回search后面的数据还是前面的数据。</p>
+<p>3.stristr()</p>
+<p>stristr()与strstr()功能相同，只是不区分大小写；</p>
+<h4 id="删除字符串"><a href="#删除字符串" class="headerlink" title="删除字符串"></a>删除字符串</h4><p>1.ltrim()</p>
+<p>string ltrim(string str[,string charlist])</p>
+<p>ltrim 函数删除字符串左侧空格或其他预定义字符；</p>
+<p>如果未设置charlist参数，则删除以下字符：</p>
+<p>“\0” NULL</p>
+<p>“\t” 制表符</p>
+<p>“\n” 换行</p>
+<p>“\x0B” 垂直制表符</p>
+<p>“\r” 回车</p>
+<p>“ “ 空格</p>
+<p>2.rtrim()</p>
+<p>string rtrim (string str[,string charlist])</p>
+<p>rtrim 函数删除字符串右侧空格或其他预定义字符；</p>
+<p>3.trim()</p>
+<p>trim 函数删除字符串两侧空格或其他预定义字符；</p>
+<p>4.strrev()反转字符串</p>
+<p>5.nl2br()将字符串换行（\n）转换成HTML换行标签（<br>）</p>
+<p>6.strip_tags()删除字符串中HTML XML PHPB标签</p>
+<p>string strip_tags(string str[,string allowable_tags])</p>
+<p>可选参数allowable_tags指定要保留的标签;</p>
+<p>7.htmlspecialchars()函数把一些预定义的字符转换为HTML实体</p>
+<p>预定义字符：</p>
+<p>&amp; -&gt;  &amp;amp</p>
+<p>‘’ -&gt;  &amp;quot；</p>
+<p>‘  -&gt;  &amp;#039</p>
+<p>“ &lt; “ -&gt;   &amp;lt</p>
+<p>“ &gt; “ -&gt;   &amp;gt</p>
+<p>####数组字符串转换</p>
+<p>1.explode()返回由字符串组成的数组</p>
+<p>2.implode()将数组元素连接成字符串</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+<div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/images/wechat-qcode.jpg" alt="rose-j wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我！</div>
+</div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/php/" rel="tag"># php</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/10/php/" rel="next" title="php 简单介绍">
+                <i class="fa fa-chevron-left"></i> php 简单介绍
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/flower.jpg"
+               alt="rose-j" />
+          <p class="site-author-name" itemprop="name">rose-j</p>
+          <p class="site-description motion-element" itemprop="description">加油！现在的你</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Rosej2016" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.cnblogs.com/rosej" target="_blank" title="博客园">
+                  
+                    <i class="fa fa-fw fa-bold"></i>
+                  
+                  博客园
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#运算符"><span class="nav-number">1.</span> <span class="nav-text">运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算数运算符"><span class="nav-number">1.1.</span> <span class="nav-text">算数运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#赋值运算符"><span class="nav-number">1.2.</span> <span class="nav-text">赋值运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#递增递减"><span class="nav-number">1.3.</span> <span class="nav-text">递增递减</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">1.4.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比较运算符"><span class="nav-number">1.5.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#三元运算符"><span class="nav-number">1.6.</span> <span class="nav-text">三元运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#运算符的优先级"><span class="nav-number">1.7.</span> <span class="nav-text">运算符的优先级</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流程控制"><span class="nav-number">2.</span> <span class="nav-text">流程控制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#判断语句"><span class="nav-number">2.1.</span> <span class="nav-text">判断语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#循环语句"><span class="nav-number">2.2.</span> <span class="nav-text">循环语句</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#跳出循环"><span class="nav-number">2.3.</span> <span class="nav-text">跳出循环</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数"><span class="nav-number">3.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数概念"><span class="nav-number">3.1.</span> <span class="nav-text">函数概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数分布"><span class="nav-number">3.2.</span> <span class="nav-text">函数分布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数简介"><span class="nav-number">3.3.</span> <span class="nav-text">函数简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#返回值"><span class="nav-number">3.4.</span> <span class="nav-text">返回值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量作用域和生命周期"><span class="nav-number">3.5.</span> <span class="nav-text">变量作用域和生命周期</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#include-和-require"><span class="nav-number">3.6.</span> <span class="nav-text">include 和 require</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组"><span class="nav-number">4.</span> <span class="nav-text">数组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数组的概念"><span class="nav-number">4.1.</span> <span class="nav-text">数组的概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组的创建"><span class="nav-number">4.2.</span> <span class="nav-text">数组的创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组的基本操作"><span class="nav-number">4.3.</span> <span class="nav-text">数组的基本操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遍历数组"><span class="nav-number">4.4.</span> <span class="nav-text">遍历数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组排序"><span class="nav-number">4.5.</span> <span class="nav-text">数组排序</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#二维数组"><span class="nav-number">4.6.</span> <span class="nav-text">二维数组</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">5.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输出字符串"><span class="nav-number">5.1.</span> <span class="nav-text">输出字符串</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他处理函数"><span class="nav-number">5.2.</span> <span class="nav-text">其他处理函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查找与替换"><span class="nav-number">5.3.</span> <span class="nav-text">查找与替换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删除字符串"><span class="nav-number">5.4.</span> <span class="nav-text">删除字符串</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">rose-j</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
