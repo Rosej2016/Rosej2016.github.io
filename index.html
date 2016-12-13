@@ -1209,14 +1209,11 @@
 
       
         
-          <h3 id="ios项目打包"><a href="#ios项目打包" class="headerlink" title="ios项目打包"></a>ios项目打包</h3><p><strong>react-native 发布流程:</strong><br><strong>准备工作:</strong><br>1、苹果开发者帐号一枚<br><a href="https://developer.apple.com/">https://developer.apple.com/</a><br>2、蒲公英应用测试号一枚<br><a href="https://www.pgyer.com/">https://www.pgyer.com/</a></p>
-          <!--noindex-->
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/20/ios项目打包/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <h3 id="ios项目打包"><a href="#ios项目打包" class="headerlink" title="ios项目打包"></a>ios项目打包</h3><p><strong>react-native 发布流程:</strong><br><strong>准备工作:</strong><br>1、苹果开发者帐号一枚<br><a href="https://developer.apple.com/" target="_blank" rel="external">https://developer.apple.com/</a><br>2、蒲公英应用测试号一枚<br><a href="https://www.pgyer.com/" target="_blank" rel="external">https://www.pgyer.com/</a></p>
+<p><strong>开发者中心</strong><br>1、打开网址，点击右上方的Account进行登陆<br>2、点击 Certificates,IDs &amp; Profiles<br>3、找到Devices 点击选项ALL点击右上角+号进行添加设备UDID 之后点击Continue和Register如下图：<br><img src="../img/ios1.png" alt="ios1.png"><br><img src="../img/ios2.png" alt="ios2.png"><br>        添加UDID<br>4、Identifiers -&gt; App IDs -&gt; 添加APP ID也就是bounld ID<br>点击Continue和Register如下图：<br><img src="../img/ios3.png" alt="ios3.png"><br>Bundle Id 就是此项里面的内容<br><img src="../img/ios4.png" alt="ios4.png"><br>5、最下面 Provisioning Profiles -&gt; Distribution-&gt;添加描述文件－&gt;点击添加-&gt;Ad Hoc-&gt;继续-&gt;选中之前添加的App ID-&gt;继续－&gt;选中证书-&gt;继续－&gt;选择设备-&gt;继续-&gt;添加描述文件名称－进入到下载描述文件页，点击下载<br><img src="../img/ios5.png" alt="ios5.png"><br><img src="../img/ios6.png" alt="ios6.png"><br><img src="../img/ios7.png" alt="ios7.png"><br><strong>下载权限可以全选，也可以只选择部分人员。</strong><br><img src="../img/ios9.png" alt="ios9.png"><br><img src="../img/ios10.png" alt="ios10.png"><br>6、找到你下载好的有效证书和下载好的描述文件双击打开<br><img src="../img/ios11.png" alt="ios11.png"><br>7、找到要打包的文件夹，文件用Xcode打开，点击Build Settings –&gt;All和Combined –&gt;Code Signing –&gt; Code Signing Identity和Provisioning Profile 选择正确的证书和描述文件<br><img src="../img/ios12.png" alt="ios12.png"><br><img src="../img/ios13.png" alt="ios13.png"><br>8、然后将Xcode左上方的模拟机选成默认的<br><img src="../img/ios14.png" alt="ios14.png"><br><img src="../img/ios15.png" alt="ios15.png"><br>9、选择Product–&gt;Archive<br><img src="../img/ios16.png" alt="ios16.png"><br>10、打包成功 点击Export–&gt;Save for Ad Hoc Deployment<br><img src="../img/ios17.png" alt="ios17.png"><br><img src="../img/ios18.png" alt="ios18.png"><br><img src="../img/ios19.png" alt="ios19.png"><br><img src="../img/ios20.png" alt="ios20.png"><br><img src="../img/ios21.png" alt="ios21.png"><br><img src="../img/ios22.png" alt="ios22.png"><br>11、文件夹里会出现后缀为.Ipa的文件证明打包完成<br><img src="../img/ios23.png" alt="ios23.png"><br>12、点击此网站<a href="https://www.pgyer.com/上传即可" target="_blank" rel="external">https://www.pgyer.com/上传即可</a><br><img src="../img/ios24.png" alt="ios24.png"><br>13、扫描二维码获取UDID<br><img src="../img/ios25.png" alt="ios25.png"></p>
+
+          
         
       
     </div>
