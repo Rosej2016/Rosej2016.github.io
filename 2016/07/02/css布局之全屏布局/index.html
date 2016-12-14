@@ -87,7 +87,11 @@
 <meta name="description" content="css布局之全屏布局例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1.Position 常规方案2.Flex CSS3 新实现
 Position
 
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061">
+&amp;lt;div class=&amp;quot;parent&amp;quot;&amp;gt;
+
+    &amp;lt;div class=&amp;quot;top&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css布局之全屏布局">
 <meta property="og:url" content="http://yoursite.com/2016/07/02/css布局之全屏布局/index.html">
@@ -95,14 +99,22 @@ Position
 <meta property="og:description" content="css布局之全屏布局例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1.Position 常规方案2.Flex CSS3 新实现
 Position
 
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061">
-<meta property="og:updated_time" content="2016-12-12T06:31:51.000Z">
+&amp;lt;div class=&amp;quot;parent&amp;quot;&amp;gt;
+
+    &amp;lt;div class=&amp;quot;top&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;">
+<meta property="og:updated_time" content="2016-12-14T14:03:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css布局之全屏布局">
 <meta name="twitter:description" content="css布局之全屏布局例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1.Position 常规方案2.Flex CSS3 新实现
 Position
 
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061">
+&amp;lt;div class=&amp;quot;parent&amp;quot;&amp;gt;
+
+    &amp;lt;div class=&amp;quot;top&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;
+
+    &amp;lt;div class=&amp;quot;">
 
 
 
@@ -324,13 +336,287 @@ Position
 <h2 id="css布局之全屏布局"><a href="#css布局之全屏布局" class="headerlink" title="css布局之全屏布局"></a>css布局之全屏布局</h2><h3 id="例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1-Position-常规方案2-Flex-CSS3-新实现"><a href="#例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1-Position-常规方案2-Flex-CSS3-新实现" class="headerlink" title="例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1.Position 常规方案2.Flex CSS3 新实现"></a>例如管理系统，监控与统计平台均广泛的使用全屏布局。定宽需求，实现方案：1.Position 常规方案2.Flex CSS3 新实现</h3><ul>
 <li><h3 id="Position"><a href="#Position" class="headerlink" title="Position"></a>Position</h3></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;right&quot;&gt;</div><div class="line"></div><div class="line">	/*辅助结构用于滚动*/</div><div class="line"></div><div class="line">		&lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line"></div><div class="line">html,body,.parent &#123;</div><div class="line"></div><div class="line">	height: 100%;</div><div class="line"></div><div class="line">	/*用于隐藏滚动条*/</div><div class="line"></div><div class="line">	overflo: hidden;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.top &#123;</div><div class="line"></div><div class="line">	/*相对于 body 定位*/</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line"></div><div class="line">	top: 0;</div><div class="line"></div><div class="line">	left: 0;</div><div class="line"></div><div class="line">	right: 0;</div><div class="line"></div><div class="line">	height: 100px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.left &#123;</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line"></div><div class="line">	left: 0;</div><div class="line"></div><div class="line">	top: 100px;</div><div class="line"></div><div class="line">	bottom: 50px;</div><div class="line"></div><div class="line">	width: 200px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right &#123;</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line"></div><div class="line">	left: 200px;</div><div class="line"></div><div class="line">	right: 0;</div><div class="line"></div><div class="line">	top: 100px;</div><div class="line"></div><div class="line">	bottom: 50px;</div><div class="line"></div><div class="line">	overflow: auto;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right .inner &#123;</div><div class="line"></div><div class="line">	/*此样式为演示所有*/</div><div class="line"></div><div class="line">	min-height: 1000px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.bottom &#123;</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line">	</div><div class="line">	left: 0;</div><div class="line"></div><div class="line">	right: 0;</div><div class="line"></div><div class="line">	bottom: 0;</div><div class="line"></div><div class="line">	height: 50px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="此方法不支持-IE6-可以使用下面的方法解决兼容问题。"><a href="#此方法不支持-IE6-可以使用下面的方法解决兼容问题。" class="headerlink" title="此方法不支持 IE6 可以使用下面的方法解决兼容问题。"></a>此方法不支持 IE6 可以使用下面的方法解决兼容问题。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;g-hd&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;g-sd&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;g-mn&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;g-ft&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line"></div><div class="line">html,body &#123;</div><div class="line"></div><div class="line">	width: 100%;</div><div class="line"></div><div class="line">	height: 100%;</div><div class="line"></div><div class="line">	overflow: hidden;</div><div class="line"></div><div class="line">	margin: 0;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">html &#123;</div><div class="line"></div><div class="line">	height: auto;</div><div class="line"></div><div class="line">	padding: 100px 0 50px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-hd,.g-sd,.g-mn,.g-ft &#123;</div><div class="line"></div><div class="line">	position: absolute;</div><div class="line"></div><div class="line">	left: 0;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-hd,.g-ft &#123;</div><div class="line"></div><div class="line">	width: 100%;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-sd,.g-mn &#123;</div><div class="line"></div><div class="line">	top: 100px;</div><div class="line"></div><div class="line">	bottom: 50px;</div><div class="line"></div><div class="line">	height: 100%;</div><div class="line"></div><div class="line">	overflow: auto;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-hd &#123;</div><div class="line"></div><div class="line">	top: 0;</div><div class="line"></div><div class="line">	height: 100px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-sd &#123;</div><div class="line"></div><div class="line">	width: 300px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-mn &#123;</div><div class="line"></div><div class="line">	position: relative;</div><div class="line"></div><div class="line">	left: 300px;</div><div class="line"></div><div class="line">	right: 0;</div><div class="line"></div><div class="line">	top: 0;</div><div class="line"></div><div class="line">	left: 0;</div><div class="line"></div><div class="line">	margin-left: 300px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.g-ft &#123;</div><div class="line"></div><div class="line">	bottom: 0;</div><div class="line"></div><div class="line">	height: 50px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<ul>
+<pre><code>&lt;div class=&quot;parent&quot;&gt;
+
+    &lt;div class=&quot;top&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;right&quot;&gt;
+
+    /*辅助结构用于滚动*/
+
+        &lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style&gt;
+
+html,body,.parent {
+
+    height: 100%;
+
+    /*用于隐藏滚动条*/
+
+    overflo: hidden;
+
+}
+
+.top {
+
+    /*相对于 body 定位*/
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 100px;
+
+}
+
+.left {
+
+    position: absolute;
+
+    left: 0;
+
+    top: 100px;
+
+    bottom: 50px;
+
+    width: 200px;
+
+}
+
+.right {
+
+    position: absolute;
+
+    left: 200px;
+
+    right: 0;
+
+    top: 100px;
+
+    bottom: 50px;
+
+    overflow: auto;
+
+}
+
+.right .inner {
+
+    /*此样式为演示所有*/
+
+    min-height: 1000px;
+
+}
+
+.bottom {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    height: 50px;
+
+}
+
+&lt;/style&gt;
+</code></pre><h4 id="此方法不支持-IE6-可以使用下面的方法解决兼容问题。"><a href="#此方法不支持-IE6-可以使用下面的方法解决兼容问题。" class="headerlink" title="此方法不支持 IE6 可以使用下面的方法解决兼容问题。"></a>此方法不支持 IE6 可以使用下面的方法解决兼容问题。</h4><pre><code>&lt;div class=&quot;g-hd&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;g-sd&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;g-mn&quot;&gt;&lt;/div&gt;
+
+&lt;div class=&quot;g-ft&quot;&gt;&lt;/div&gt;
+
+&lt;style&gt;
+
+html,body {
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    margin: 0;
+
+}
+
+html {
+
+    height: auto;
+
+    padding: 100px 0 50px;
+
+}
+
+.g-hd,.g-sd,.g-mn,.g-ft {
+
+    position: absolute;
+
+    left: 0;
+
+}
+
+.g-hd,.g-ft {
+
+    width: 100%;
+
+}
+
+.g-sd,.g-mn {
+
+    top: 100px;
+
+    bottom: 50px;
+
+    height: 100%;
+
+    overflow: auto;
+
+}
+
+.g-hd {
+
+    top: 0;
+
+    height: 100px;
+
+}
+
+.g-sd {
+
+    width: 300px;
+
+}
+
+.g-mn {
+
+    position: relative;
+
+    left: 300px;
+
+    right: 0;
+
+    top: 0;
+
+    left: 0;
+
+    margin-left: 300px;
+
+}
+
+.g-ft {
+
+    bottom: 0;
+
+    height: 50px;
+
+}
+
+&lt;/style&gt;
+</code></pre><ul>
 <li><h3 id="Flex"><a href="#Flex" class="headerlink" title="Flex"></a>Flex</h3></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;top&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;middle&quot;&gt;</div><div class="line"></div><div class="line">		&lt;div class=&quot;left&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">		&lt;div class=&quot;right&quot;&gt;</div><div class="line"></div><div class="line">			&lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">		&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;/div&gt;</div><div class="line"></div><div class="line">	&lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;style media=&quot;screen&quot;&gt;</div><div class="line"></div><div class="line">html,body,.parent &#123;</div><div class="line"></div><div class="line">	height: 100%;</div><div class="line"></div><div class="line">	overflow: hidden;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.parent &#123;</div><div class="line"></div><div class="line">	display: flex;</div><div class="line"></div><div class="line">	flex-direction: column;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.top &#123;</div><div class="line"></div><div class="line">	height: 100px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.bottom &#123;</div><div class="line"></div><div class="line">	height: 50px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.middle &#123;</div><div class="line"></div><div class="line">	// 居中自适应</div><div class="line"></div><div class="line">	flex: 1;</div><div class="line"></div><div class="line">	display: flex;</div><div class="line"></div><div class="line">	/*flex-direction: row 为默认值*/</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.left &#123;</div><div class="line"></div><div class="line">	width: 200px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right &#123;</div><div class="line"></div><div class="line">	flex: 1;</div><div class="line"></div><div class="line">	overflow: auto;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">.right .inner &#123;</div><div class="line"></div><div class="line">	min-height: 1000px;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-<h4 id="Flex-兼容性-CSS3-中的新概念所有-IE9-及其也行版本都不兼容。百分比宽度需求-只需把定宽高（px-为单位的值）的实现改成百分比（-）既可。"><a href="#Flex-兼容性-CSS3-中的新概念所有-IE9-及其也行版本都不兼容。百分比宽度需求-只需把定宽高（px-为单位的值）的实现改成百分比（-）既可。" class="headerlink" title="Flex 兼容性,CSS3 中的新概念所有 IE9 及其也行版本都不兼容。百分比宽度需求,只需把定宽高（px 为单位的值）的实现改成百分比（%）既可。"></a>Flex 兼容性,CSS3 中的新概念所有 IE9 及其也行版本都不兼容。百分比宽度需求,只需把定宽高（px 为单位的值）的实现改成百分比（%）既可。</h4>
+<pre><code>&lt;div class=&quot;parent&quot;&gt;
+
+    &lt;div class=&quot;top&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;middle&quot;&gt;
+
+        &lt;div class=&quot;left&quot;&gt;&lt;/div&gt;
+
+        &lt;div class=&quot;right&quot;&gt;
+
+            &lt;div class=&quot;inner&quot;&gt;&lt;/div&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+       &lt;div class=&quot;bottom&quot;&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;style media=&quot;screen&quot;&gt;
+
+html,body,.parent {
+
+    height: 100%;
+
+    overflow: hidden;
+
+}
+
+.parent {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.top {
+
+    height: 100px;
+
+}
+
+.bottom {
+
+    height: 50px;
+
+}
+
+.middle {
+
+    // 居中自适应
+
+    flex: 1;
+
+    display: flex;
+
+    /*flex-direction: row 为默认值*/
+
+}
+
+.left {
+
+    width: 200px;
+
+}
+
+.right {
+
+    flex: 1;
+
+    overflow: auto;
+
+}
+
+.right .inner {
+
+    min-height: 1000px;
+
+}
+
+&lt;/style&gt;
+</code></pre><h4 id="Flex-兼容性-CSS3-中的新概念所有-IE9-及其也行版本都不兼容。百分比宽度需求-只需把定宽高（px-为单位的值）的实现改成百分比（-）既可。"><a href="#Flex-兼容性-CSS3-中的新概念所有-IE9-及其也行版本都不兼容。百分比宽度需求-只需把定宽高（px-为单位的值）的实现改成百分比（-）既可。" class="headerlink" title="Flex 兼容性,CSS3 中的新概念所有 IE9 及其也行版本都不兼容。百分比宽度需求,只需把定宽高（px 为单位的值）的实现改成百分比（%）既可。"></a>Flex 兼容性,CSS3 中的新概念所有 IE9 及其也行版本都不兼容。百分比宽度需求,只需把定宽高（px 为单位的值）的实现改成百分比（%）既可。</h4>
       
     </div>
 
@@ -465,7 +751,7 @@ Position
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -475,7 +761,7 @@ Position
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

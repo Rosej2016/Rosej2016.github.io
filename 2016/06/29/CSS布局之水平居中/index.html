@@ -84,19 +84,16 @@
 
 
 
-<meta name="description" content="css布局之水平居中子元素于父元素水平居中且其（子元素与父元素）宽度均可变
-inline-block + text-align1234567891011&amp;lt;div class=&amp;quot;parent&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;hello world&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;style&amp;gt;.ch">
+<meta name="description" content="css布局之水平居中子元素于父元素水平居中且其（子元素与父元素）宽度均可变">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css水平布局">
 <meta property="og:url" content="http://yoursite.com/2016/06/29/CSS布局之水平居中/index.html">
 <meta property="og:site_name" content="rose-j的博客">
-<meta property="og:description" content="css布局之水平居中子元素于父元素水平居中且其（子元素与父元素）宽度均可变
-inline-block + text-align1234567891011&amp;lt;div class=&amp;quot;parent&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;hello world&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;style&amp;gt;.ch">
-<meta property="og:updated_time" content="2016-12-12T06:55:13.000Z">
+<meta property="og:description" content="css布局之水平居中子元素于父元素水平居中且其（子元素与父元素）宽度均可变">
+<meta property="og:updated_time" content="2016-12-14T14:04:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css水平布局">
-<meta name="twitter:description" content="css布局之水平居中子元素于父元素水平居中且其（子元素与父元素）宽度均可变
-inline-block + text-align1234567891011&amp;lt;div class=&amp;quot;parent&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;child&amp;quot;&amp;gt;hello world&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;style&amp;gt;.ch">
+<meta name="twitter:description" content="css布局之水平居中子元素于父元素水平居中且其（子元素与父元素）宽度均可变">
 
 
 
@@ -314,22 +311,67 @@ inline-block + text-align1234567891011&amp;lt;div class=&amp;quot;parent&amp;quo
       
 
       
-        <a id="more"></a>
-<h2 id="css布局之水平居中"><a href="#css布局之水平居中" class="headerlink" title="css布局之水平居中"></a>css布局之水平居中</h2><h3 id="子元素于父元素水平居中且其（子元素与父元素）宽度均可变"><a href="#子元素于父元素水平居中且其（子元素与父元素）宽度均可变" class="headerlink" title="子元素于父元素水平居中且其（子元素与父元素）宽度均可变"></a>子元素于父元素水平居中且其（子元素与父元素）宽度均可变</h3><ul>
-<li><h3 id="inline-block-text-align"><a href="#inline-block-text-align" class="headerlink" title="inline-block + text-align"></a>inline-block + text-align</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.child &#123;</div><div class="line"> display: inline-block;</div><div class="line">&#125;</div><div class="line">.parent &#123;</div><div class="line"> text-align: center;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
+        <h2 id="css布局之水平居中"><a href="#css布局之水平居中" class="headerlink" title="css布局之水平居中"></a>css布局之水平居中</h2><h3 id="子元素于父元素水平居中且其（子元素与父元素）宽度均可变"><a href="#子元素于父元素水平居中且其（子元素与父元素）宽度均可变" class="headerlink" title="子元素于父元素水平居中且其（子元素与父元素）宽度均可变"></a>子元素于父元素水平居中且其（子元素与父元素）宽度均可变</h3><a id="more"></a>
+<ul>
+<li><h3 id="inline-block-text-align"><a href="#inline-block-text-align" class="headerlink" title="inline-block + text-align"></a>inline-block + text-align</h3><pre><code>&lt;div class=&quot;parent&quot;&gt;
+ &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.child {
+ display: inline-block;
+}
+.parent {
+ text-align: center;
+}
+&lt;/style&gt;
+</code></pre></li>
 </ul>
 <h4 id="此方法的好处在于兼容性好（甚至可以兼容-IE-6-和-IE-7）。"><a href="#此方法的好处在于兼容性好（甚至可以兼容-IE-6-和-IE-7）。" class="headerlink" title="此方法的好处在于兼容性好（甚至可以兼容 IE 6 和 IE 7）。"></a>此方法的好处在于兼容性好（甚至可以兼容 IE 6 和 IE 7）。</h4><ul>
-<li><h3 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> position: relative;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line"> position: absolute;</div><div class="line"> left: 50%;</div><div class="line"> transform: translateX(-50%);</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
+<li><h3 id="absolute-transform"><a href="#absolute-transform" class="headerlink" title="absolute + transform"></a>absolute + transform</h3><pre><code>&lt;div class=&quot;parent&quot;&gt;
+ &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.parent {
+ position: relative;
+}
+.child {
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+}
+&lt;/style&gt;
+</code></pre></li>
 </ul>
 <h4 id="此方法的好处在于使用绝对定位后元素会脱离文档流，不会对后续元素的布局造成影响。"><a href="#此方法的好处在于使用绝对定位后元素会脱离文档流，不会对后续元素的布局造成影响。" class="headerlink" title="此方法的好处在于使用绝对定位后元素会脱离文档流，不会对后续元素的布局造成影响。"></a>此方法的好处在于使用绝对定位后元素会脱离文档流，不会对后续元素的布局造成影响。</h4><h4 id="但要注意的是transform-属于CSS3属性，存在兼容性问题"><a href="#但要注意的是transform-属于CSS3属性，存在兼容性问题" class="headerlink" title="但要注意的是transform 属于CSS3属性，存在兼容性问题."></a>但要注意的是transform 属于CSS3属性，存在兼容性问题.</h4><ul>
-<li><h3 id="table-margin"><a href="#table-margin" class="headerlink" title="table + margin"></a>table + margin</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.child &#123;</div><div class="line"> display: table;</div><div class="line"> margin: 0 auto;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
+<li><h3 id="table-margin"><a href="#table-margin" class="headerlink" title="table + margin"></a>table + margin</h3><pre><code>&lt;div class=&quot;parent&quot;&gt;
+ &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.child {
+ display: table;
+ margin: 0 auto;
+}
+&lt;/style&gt;
+</code></pre></li>
 </ul>
 <h4 id="display-table-在表现上类似-block-元素，但是宽度为内容宽-无需设置父元素样式-（支持-IE-8-及其以上版本）-兼容-IE-8-以下版本则需要调整table。"><a href="#display-table-在表现上类似-block-元素，但是宽度为内容宽-无需设置父元素样式-（支持-IE-8-及其以上版本）-兼容-IE-8-以下版本则需要调整table。" class="headerlink" title="display: table 在表现上类似 block 元素，但是宽度为内容宽,无需设置父元素样式 （支持 IE 8 及其以上版本）,兼容 IE 8 以下版本则需要调整table。"></a>display: table 在表现上类似 block 元素，但是宽度为内容宽,无需设置父元素样式 （支持 IE 8 及其以上版本）,兼容 IE 8 以下版本则需要调整table。</h4><ul>
-<li><h3 id="flex-justify-content"><a href="#flex-justify-content" class="headerlink" title="flex + justify-content"></a>flex + justify-content</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;parent&quot;&gt;</div><div class="line"> &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;style&gt;</div><div class="line">.parent &#123;</div><div class="line"> display: flex;</div><div class="line"> justify-content: center;</div><div class="line">&#125;</div><div class="line">或者以下方法也可以</div><div class="line">.parent &#123;</div><div class="line"> display: flex;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line"> margin: 0 auto;</div><div class="line">&#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
-</li>
+<li><h3 id="flex-justify-content"><a href="#flex-justify-content" class="headerlink" title="flex + justify-content"></a>flex + justify-content</h3><pre><code>&lt;div class=&quot;parent&quot;&gt;
+ &lt;div class=&quot;child&quot;&gt;hello world&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+.parent {
+ display: flex;
+ justify-content: center;
+}
+或者以下方法也可以
+.parent {
+ display: flex;
+}
+.child {
+ margin: 0 auto;
+}
+&lt;/style&gt;
+</code></pre></li>
 </ul>
 <h4 id="这种方法的好处在于只需设置父节点属性，无需设置子元素，但此种方法存在兼容性问题。"><a href="#这种方法的好处在于只需设置父节点属性，无需设置子元素，但此种方法存在兼容性问题。" class="headerlink" title="这种方法的好处在于只需设置父节点属性，无需设置子元素，但此种方法存在兼容性问题。"></a>这种方法的好处在于只需设置父节点属性，无需设置子元素，但此种方法存在兼容性问题。</h4>
       
@@ -373,8 +415,8 @@ inline-block + text-align1234567891011&amp;lt;div class=&amp;quot;parent&amp;quo
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/07/01/css多列布局/" rel="prev" title="css水平与垂直居中和多列布局">
-                css水平与垂直居中和多列布局 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/07/01/html5新特性/" rel="prev" title="html5新标签及特性">
+                html5新标签及特性 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -466,7 +508,7 @@ inline-block + text-align1234567891011&amp;lt;div class=&amp;quot;parent&amp;quo
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">15</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -476,7 +518,7 @@ inline-block + text-align1234567891011&amp;lt;div class=&amp;quot;parent&amp;quo
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
